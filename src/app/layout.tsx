@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import FooterSection from "@/components/FooterSection";
+import SummerSale from "@/components/SummerSale";
+import NavBar from "@/components/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -9,6 +12,46 @@ const geistSans = localFont({
 });
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const poppins_bold = localFont({
+  src: "./fonts/Poppins-Medium.ttf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const poppins_regular = localFont({
+  src: "./fonts/Poppins-Regular.ttf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const inter_regular = localFont({
+  src: "./fonts/Inter_24pt-Regular.ttf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const inter_bold = localFont({
+  src: "./fonts/Inter_28pt-SemiBold.ttf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const bangers = localFont({
+  src: "./fonts/Bangers-Regular.ttf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const cf = localFont({
+  src: "./fonts/Fontspring-DEMO-integralcf-bold.otf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const satoshi = localFont({
+  src: "./fonts/Satoshi-Black.otf",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
+const satoshiMedium = localFont({
+  src: "./fonts/Satoshi-Medium.otf",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -26,9 +69,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${satoshiMedium.variable}  ${satoshi.variable} ${geistMono.variable}  ${cf.variable} ${poppins_bold.variable} ${poppins_regular.variable} ${inter_bold.variable} ${inter_regular.variable} ${bangers.variable} antialiased`}
       >
+        <SummerSale />
+        <NavBar />
         {children}
+        <FooterSection />
       </body>
     </html>
   );

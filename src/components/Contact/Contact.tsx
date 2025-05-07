@@ -42,22 +42,22 @@ export default function Contact() {
           <input
             type="text"
             placeholder="Your Name *"
-            className="p-3 border border-gray-300 bg-[#F5F5F5] rounded-sm w-full text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
+            className="p-3 border border-gray-300 bg-[#F5F5F5] text-black rounded-sm w-full text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
           />
           <input
             type="email"
             placeholder="Your Email *"
-            className="p-3 border border-gray-300 rounded-sm w-full bg-[#F5F5F5] text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
+            className="p-3 border border-gray-300 rounded-sm w-full text-black bg-[#F5F5F5] text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
           />
           <input
             type="tel"
             placeholder="Your Phone *"
-            className="p-3 border border-gray-300 rounded-sm w-full bg-[#F5F5F5] text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
+            className="p-3 border border-gray-300 rounded-sm w-full text-black bg-[#F5F5F5] text-sm focus:outline-none focus:ring-2 focus:ring-red-400"
           />
         </div>
         <textarea
           placeholder="Your Message"
-          className="w-full p-3 border border-gray-300  bg-[#F5F5F5] rounded-sm text-sm focus:outline-none focus:ring-2 focus:ring-red-400 h-32"
+          className="w-full p-3 border border-gray-300 text-black  bg-[#F5F5F5] rounded-sm text-sm focus:outline-none focus:ring-2 focus:ring-red-400 h-32"
         ></textarea>
         <div className="mt-4">
           <button className="bg-red-500 text-white py-3 px-6 rounded-sm text-sm hover:bg-red-600 transition">

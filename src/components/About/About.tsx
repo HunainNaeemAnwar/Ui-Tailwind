@@ -4,7 +4,7 @@ import { FaHouse, FaMoneyCheckDollar } from "react-icons/fa6";
 
 export default function AboutSection() {
   return (
-    <section className="p-6 md:p-12">
+    <section className=" px-6 md:p-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-32 items-center font-poppinsRegular">
         {/* Left Text Content */}
         <div>

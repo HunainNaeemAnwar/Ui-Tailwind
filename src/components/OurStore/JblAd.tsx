@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const JblAd = () => {
   return (
-    <div className=" bg-black mt-[60px] border-b border-black border-opacity-30 py-10  w-full px-6 lg:px-[40px]  xl:px-[75px] ">
+    <div className=" bg-black mt-[60px] border-b border-black text-white border-opacity-30 py-10  w-full px-6 lg:px-[40px]  xl:px-[75px] ">
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col items-center lg:items-start gap-[60px] mt-8">
           <div className="font-poppinsBold text-[16px] text-[#00FF66]">

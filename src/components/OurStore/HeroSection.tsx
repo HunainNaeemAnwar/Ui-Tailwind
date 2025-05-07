@@ -4,9 +4,9 @@ import { RiArrowRightLine } from "react-icons/ri";
 import Image from "next/image";
 const HeroSection = () => {
   return (
-    <section className=" w-full flex flex-row gap-9  mt-[143px] pb-10  px-[75px]">
+    <section className=" w-full flex flex-row gap-9  text-white bg-black mt-[143px] pb-10  px-[75px]">
       {" "}
-      <div className="w-full md:h-[444px] grid grid-cols-1 md:grid-cols-2 place-items-center mt-10 p-4 md:p-0 text-[16px] font-poppinsRegular bg-black">
+      <div className="w-full md:h-[444px] grid grid-cols-1  md:grid-cols-2 place-items-center mt-10 p-4 md:p-0 text-[16px] font-poppinsRegular bg-black">
         <div className="flex flex-col gap-6 pl-10">
           <div className="flex flex-row gap-4 items-center">
             <Image

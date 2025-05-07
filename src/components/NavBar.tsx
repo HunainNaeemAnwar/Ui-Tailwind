@@ -34,7 +34,7 @@ const HeaderSection = () => {
     <nav className="absolute top-[48px] border-b bg-[#f0f0f0]   border-black border-opacity-20 w-full p-3 z-50">
       <div className=" md:px-[30px] flex items-center justify-between mt-2 lg:px-14 px-3  ">
         {" "}
-        <div className="md:hidden block mt-1">
+        <div className="md:hidden block mt-1 z-30">
           {!isOpen ? (
             <button onClick={() => setIsOpen(true)}>
               <HiBars3 className="text-black w-6 h-6  " />
@@ -66,7 +66,7 @@ const HeaderSection = () => {
           </form>
         </div>
       </div>
-      {isOpen ? <MobileNavLinks linkObj={navLinks} /> : null}
+      {isOpen ? <MobileNavLinks linkObj={navLinks} navState={() => setIsOpen(false)} /> : null}
     </nav>
   );
 };

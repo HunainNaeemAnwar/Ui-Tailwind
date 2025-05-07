@@ -54,7 +54,7 @@ const ExploreSection = () => {
     },
   ];
   return (
-    <section className=" flex flex-col gap-10 mt-[60px] border-b border-black border-opacity-30 py-10  w-full lg:px-[40px]  xl:px-[75px]  ">
+    <section className=" flex flex-col gap-10 mt-[60px]  py-10  w-full lg:px-[40px]  xl:px-[75px]  ">
       <div className="font-poppinsBold  lg:text-[16px] text-[#DB4444] flex flex-row items-center gap-2">
         <div className="h-[40px] w-[20px] rounded-[4px] bg-[#DB4444]"></div>
         <div>Today&apos;s</div>
